@@ -1,5 +1,9 @@
 package object_class;
+<<<<<<< HEAD
 //은행계좌 클래스
+=======
+//은행계좌 클래스(신한은행) => 멤버변수 접근제한자로 보호, getter, setter 설정
+>>>>>>> 5db85ddff026d800efe7977cf1717a6cb9d06cd7
 //클래스:객체를 만든다.
 public class Account {
 	//구성요소 : 필드, 메소드(객체가 하는 일), 생성자(초기화)
