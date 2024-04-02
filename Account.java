@@ -1,5 +1,5 @@
 package object_class;
-//은행계좌 클래스(신한은행) => 멤버변수 접근제한자로 보호, getter, setter 설정
+//은행계좌 클래스(신한은행) 
 //클래스:객체를 만든다.
 public class Account {
 	//구성요소 : 필드, 메소드(객체가 하는 일), 생성자(초기화)
@@ -45,4 +45,7 @@ public class Account {
 	//메서드는 기능이다.
 	//메서드 괄호 안에 있는 매개변수는 외부로부터 불러오는 값
 	//예외처리 > throws Exception
+
+	public int getBalance() {
+}
 }
