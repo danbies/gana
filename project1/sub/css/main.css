@@ -1,0 +1,114 @@
+@charset "UTF-8";
+body{width: 100%; height: auto; background-color: darkgray; }
+header {width: 100%; height: 200px; background-color: gold;}
+header > ul, nav > ul, footer >ul{width: 90%; height: 100%; margin: auto;}
+header > ul > li{
+    width: 30%;
+    float: left; 
+}
+header > ul > li:last-child{
+    width: 30%;
+    height: 100%;
+    float: right; 
+}
+header > ul > li:last-child >ul{
+    margin-top: 145px;
+    float: right;
+}
+header > ul > li:last-child >ul>li{
+    margin: 10px;
+    float: left;
+}
+header a{
+    display: block;
+}
+header .logo{height: 200px;}
+header .logo >a{
+    width: 200px;
+    height: 100%;
+    margin-left: 40px;
+}
+header a>img{
+    width: 180px;
+    height: 180px;
+    margin: 10px;
+    
+}
+nav {width: 100%; background-color: rosybrown;}
+nav > ul{
+    clear: both;
+    height: 50px;
+}
+nav > ul > li{
+    width: 20%;
+    float: left; 
+    background-color: orange;
+    height: 100%;
+}
+section{
+    width: 90%; height: auto; margin: 10px auto; background-color: coral;
+}
+section ul{
+    overflow: auto; /*li 자식 높이를 부모에 맞췄음*/
+    margin: 10px 0;
+}
+section ul>li{
+    width: 25%; 
+    height: 500px; 
+    float: left;
+}
+section ul:first-child>li{
+    width: 50%;
+}
+section ul:nth-child(2)>li:last-child{
+    width: 50%;
+}
+section ul:nth-child(3)>li:first-child{
+    width: 50%;
+}
+section ul:nth-child(2) ~ ul:last-child{
+    clear: both;
+}
+section ul:first-child>li:first-child{ 
+    background-color: aquamarine;
+}
+section ul:first-child>li:nth-child(2){
+    background-color: aqua;
+}
+section ul:first-child>li:nth-child(3){
+    background-color: olive;
+}
+section ul:first-child>li:last-child{
+    background-color: olivedrab;
+}
+section ul:nth-child(2)>li:first-child{ 
+    background-color: lemonchiffon;
+}
+section ul:nth-child(2)>li:nth-child(2){
+    background-color: orange;
+}
+section ul:nth-child(2)>li:nth-child(3){
+    background-color: khaki;
+}
+section ul:nth-child(3)>li:first-child{ 
+    background-color: darkblue;
+}
+section ul:nth-child(3)>li:nth-child(2){
+    background-color: whitesmoke;
+}
+section ul:nth-child(3)>li:last-child{
+    background-color: deeppink;
+}
+section ul:last-child>li:first-child{ 
+    background-color: red;
+}
+section ul:last-child>li:nth-child(2){
+    background-color: pink;
+}
+section ul:last-child>li:nth-child(3){
+    background-color: peru;
+}
+section ul:last-child>li:last-child{
+    background-color: burlywood;
+}
+footer{width: 100%; height: 100px; background-color: bisque;}
