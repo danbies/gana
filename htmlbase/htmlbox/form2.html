@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 태그들2</title>
+    <style>
+        ul{
+            list-style: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <p>
+            <label>
+                <!-- label에 for를 안주는 이유 ?input에 id 값을 안줬으니까-->
+                이름
+            </label>
+            <input type="text" value="홍길동" readonly>
+            <!-- readonly는 수정못하거나 읽기전용일 때 -->
+            <input type="hidden" name="code" value="1234">
+        </p>
+        
+        <h3>좋아하는 스포츠종목은?(다수선택가능)</h3>
+        <ul>
+            <li><input type="checkbox" name="sports1" value="football"><span>축구</span></li>
+            <li><input type="checkbox" name="sports2" value="baseball"><span>야구</span></li>
+            <li><input type="checkbox" name="sports3" value="volleyball"><span>배구</span></li>
+        </ul>
+        <fieldset>
+            <h3>여름방학 특강 - 수강할 과목을 선택하세요(1과목만 선택가능)</h3>
+            <!-- name은 서버에 변수역할을 한다. -->
+            <ul>
+                <li><label><input type="radio" name="subject" value="eng">영어회화</label></li>
+                <li><label><input type="radio" name="subject" value="ch">중국어회화</label></li>
+                <li><label><input type="radio" name="subject" value="jp">일본어회화</label></li>
+                <li><label><input type="radio" name="subject" value="noEnter" checked>선택안함</label></li>
+            </ul>
+        </fieldset>
+        <p>
+            <!-- label for="요소 id" -->
+            <label for="address">주소</label>
+            <input type="text" name="address" id="address" size="50">
+        </p>
+        <fieldset>
+            <!-- 폼 요소들을 논리적으로 묶어주는 역할: 관련있는 컨트롤 요소를 그룹핑하고 설명 추가할 때 사용 -->
+            <legend>과 티셔츠 설문</legend>
+            <p>올해 과 티(T)를 만들려고 합니다. 원하는색상을 추천해 주세요</p>
+            <label>선호색상<input type="color" value="#ff00ff" name="choice"></label>
+        </fieldset>
+    </form>
+</body>
+</html>
