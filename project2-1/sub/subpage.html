@@ -20,7 +20,7 @@
         <header id="headerArea">
             <div class="innerWrapper">
                 <h1>
-                    <a href="/index.html">
+                    <a href="../index.html">
                         <img src="../images/logo_benchmarking2.png" alt="dribble Logo">
                     </a>
                 </h1>
@@ -41,7 +41,7 @@
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="subpage.html">Inspiration</a></li>
                     <li><a href="#">Courses<span class="down">▼</span></a>
                         <ul class="hd_subNav">
                             <li>
@@ -112,38 +112,47 @@
                 <section>
                     <h2 class="hidden">Explore inspiring designs</h2>
                     <div class="filter_nav">
-                        <select name="newSite" id="newSite">
-                            <label for="newSite">Popular</label>
-                            <option value="Popular">Popular</option>
-                            <option value="New &amp; Noteworthy">New &amp; Noteworthy</option>
-                        </select>
-                        <ul>
-                            <li><a href="#">Discover</a></li>
-                            <li><a href="#">Animation</a></li>
-                            <li><a href="#">Branding</a></li>
-                            <li><a href="#">Illustration</a></li>
-                            <li><a href="#">Mobile</a></li>
-                            <li><a href="#">Print</a></li>
-                            <li><a href="#">Product Design</a></li>
-                            <li><a href="#">Typography</a></li>
-                            <li><a href="#">Web</a></li>
-                        </ul>
-                        <button class="btnstyleBase btn_borderB">Filters</button>
+                        <section>
+                            <select name="newSite" id="newSite" title="popular">
+                                <label for="newSite">Popular</label>
+                                <option value="Popular">Popular</option>
+                                <option value="New &amp; Noteworthy">New &amp; Noteworthy</option>
+                            </select>
+                            <ul>
+                                <li><a href="#">Discover</a></li>
+                                <li><a href="#">Animation</a></li>
+                                <li><a href="#">Branding</a></li>
+                                <li><a href="#">Illustration</a></li>
+                                <li><a href="#">Mobile</a></li>
+                                <li><a href="#">Print</a></li>
+                                <li><a href="#">Product Design</a></li>
+                                <li><a href="#">Typography</a></li>
+                                <li><a href="#">Web</a></li>
+                            </ul>
+                            <a href="#" class="btnstyleBase btn_borderB">Filters</a>
+                        </section>
                         <form action="filter.jsp" method="get">
                             <fieldset>
-                                <legend class="hidden">filter</legend>
+                                <legend class="hidden">Tags</legend>
                                 <label for="Tags">Tags</label>
                                 <input type="search" name="Tags" id="Tags">
+                            </fieldset>       
+                            <fieldset>
+                                <legend class="hidden">Color</legend>
                                 <label for="chooseColor">Color</label>
                                 <input type="search" name="chooseColor" id="chooseColor" placeholder="Enter hex or select">
-                                <label for="timeFrame">TimeFrame</label><select name="timeFrame" id="timeFrame">
+                            </fieldset>       
+                            <fieldset>
+                                <legend class="hidden">TimeFrame</legend>
+                                <label for="timeFrame">TimeFrame</label>
+                                <select name="timeFrame" id="timeFrame">
                                     <option value="Now">Now</option>
                                     <option value="This_Past_Week">This Past Week</option>
                                     <option value="This_Past_Month">This Past Month</option>
                                     <option value="This_Past_Year">This Past Year</option>
                                     <option value="All_Time">All Time</option>
                                 </select>
-                            </fieldset>
+                            </fieldset>       
                         </form>
                     </div>
                     <ul>
@@ -571,7 +580,7 @@
                 <section class="innerWrapper">
                     <div class="layout_1">
                         <h2 class="footer_logo">
-                            <a href="/index.html">
+                            <a href="../index.html">
                                 <img src="../images/logo_benchmarking2.png" alt="dribble Logo">
                             </a>
                         </h2>
